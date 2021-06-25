@@ -1,23 +1,21 @@
-import logo from './logo.svg';
+import { Navbar } from 'react-bootstrap';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar bg="dark">
+        <Navbar.Brand href="#home">
+          <img
+            src="https://www.redditinc.com/assets/images/site/reddit-logo.png"
+            width="30"
+            height="30"
+            className="d-inline-block align-top"
+            alt="React Bootstrap logo"
+            style={{marginLeft: 10, marginTop: 10}}
+          />
+        </Navbar.Brand>
+      </Navbar>
     </div>
   );
 }
